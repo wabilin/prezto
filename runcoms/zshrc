@@ -11,3 +11,18 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+# fish like suggestions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# emacs
+export ALTERNATE_EDITOR=""
+export EDITOR="emacsclient -t"                  # $EDITOR opens in terminal
+export VISUAL="emacsclient -c -a emacs"         # $VISUAL opens in GUI mode
+alias emacs='emacsclient -create-frame'
+alias vim='emacsclient -t'
+
+PATH=$PATH:~/.scripts
