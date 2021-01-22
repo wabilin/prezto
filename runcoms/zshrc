@@ -19,11 +19,11 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # emacs
-export ALTERNATE_EDITOR=""
-export EDITOR="emacsclient -t"                  # $EDITOR opens in terminal
-export VISUAL="emacsclient -c -a emacs"         # $VISUAL opens in GUI mode
-alias emacs='emacsclient -create-frame'
-alias vim='emacsclient -t'
+export ALTERNATE_EDITOR="vim"
+# export EDITOR="emacsclient -t"                  # $EDITOR opens in terminal
+# export VISUAL="emacsclient -c -a emacs"         # $VISUAL opens in GUI mode
+# alias emacs='emacsclient -create-frame'
+# alias vim='emacsclient -t'
 
 PATH=$PATH:~/.scripts
 
